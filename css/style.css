@@ -3,14 +3,45 @@
     --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
     --Grayish-Blue: hsl(212, 23%, 69%);
     --Light-Grayish-Blue: hsl(210, 46%, 95%);
+    --height-containers: 46vh;
+    /*--border-radius-containers: 12px;*/
 }
 
 *{
     padding: 0;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+}
+
+.row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden{
+    visibility: hidden;
 }
 
 body{
     background: var(--Light-Grayish-Blue);
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+    height: 100vh;
+    font-size: 13px;
 }
 
 .attribution { 
@@ -19,4 +50,77 @@ body{
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+.manrope-font{
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.container{
+    height: var(--height-containers);
+    width: 60vw;
+    border-radius: 12px;/*var(--border-radius-containers);*/
+    background: white;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+}
+
+.img-cotainer{
+    height: var(--height-containers);
+    width: 20vw;
+    border-radius: 12px 0 0 12px;
+}
+
+.img-cotainer img{
+    height: var(--height-containers);
+    width: 20vw;
+    border-radius: 12px 0 0 12px;
+}
+
+.content{
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+    padding: 5vh;
+    border: 1px solid green;
+}
+
+.title{
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 700;
+    margin-top: -11px;
+    padding-bottom: 12px;
+}
+
+.text{
+    color: var(--Desaturated-Dark-Blue);
+    padding-bottom: 16px;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center;
+    align-items: center;*/
+    align-items: flex-start;
+	gap: 2vh;
+    position: relative;
+    border: 1px solid black;
+}
+
+.img-profile-menu{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    border: 1px solid brown;
+}
+
+.img-profile{
+    margin-top: 0;
 }
