@@ -65,17 +65,17 @@ body{
     flex-direction: row;
 }
 
-.img-cotainer{
+.img-container{
     height: var(--height-containers);
     width: 20vw;
     border-radius: 12px 0 0 12px;
 }
 
-.img-cotainer img{
+/*.img-container img{
     height: var(--height-containers);
     width: 20vw;
     border-radius: 12px 0 0 12px;
-}
+}*/
 
 .content{
     padding: 5vh;
@@ -120,7 +120,7 @@ body{
 .date{
     position: absolute;
     top: 24px;
-    left: 65px;
+    left: 64px;
     color: var(--Grayish-Blue);
 }
 
@@ -151,13 +151,95 @@ body{
 
 .share{
     right: -7vw;
-    top: -11vh;
     height: 7vh;
     width: 16vw;
-    gap: 17px;
+    bottom: 72px;
     border-radius: 8px;
+}
+
+.share div{
+    width: 100%;
+    height: 100%;
+    gap: 17px;
 }
 
 .share p{
     color: var(--Grayish-Blue);
+}
+
+
+@media (max-width: 640px){
+    body{
+        font-size: 10px;
+    }
+
+    .container{
+        height: 77vh;
+        width: 84vw;
+        flex-direction: column;
+    }
+
+    .content{
+        padding: 8vh 5vh 5vh 5vh;
+    }
+
+    .title{
+        padding-bottom: 17px;
+    }
+
+    .img-container{
+        width: 100%;
+        height: 25vh;
+        border-radius: 12px 12px 0 0;
+        object-fit: cover;
+    }
+
+    .text{
+        font-size: 14px;
+    }
+
+    .footer{
+        height: 8vh;
+        top: 10px;
+    }
+
+    .img-profile-menu{
+        width: 13vw;
+        height: 13vw;
+    }
+
+    .username{
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    .date{
+        top: 27px;
+        font-size: 13px;
+    }
+
+    .peak-popup{
+        bottom: 3vw;
+    }
+
+    .share{
+        width: 82vw;
+        height: 9vh;
+        right: -33px;
+        bottom: -3px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .share div{
+        width: 70%;
+        justify-content: space-evenly;
+    }
+
+    .share p{
+        font-size: 13px;
+    }
+
+    .attribution{
+        font-size: 13px;
+    }
 }
